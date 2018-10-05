@@ -25,8 +25,8 @@ namespace DbCreate
         public string Email { set; get; }
         public string Telephone { set; get; }
         public string Address { set; get; }
-        public string Code_User { set; get; }
-        public string U_Password { set; get; }
+        public string User_Name { set; get; }
+        public string User_Password { set; get; }
         public string Gender { set; get; }
     }
 
