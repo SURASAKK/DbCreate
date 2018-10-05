@@ -16,8 +16,7 @@ namespace DbCreate.Controllers
         public DbCreateController(DbCreateContext db)
         {
             this.db = db;
-
-        g}
+        }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
