@@ -46,7 +46,7 @@ namespace DbCreate
         public string ProductName { set; get; }
         public string image { set; get; }
         public int count { set; get; }
-        public float cost { set; get; }
+        public float Price { set; get; }
 
     }
     public class DbCreateContext : DbContext
