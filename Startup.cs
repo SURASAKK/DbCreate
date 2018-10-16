@@ -29,6 +29,7 @@ namespace DbCreate
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration.GetValue("ConnectionString", "");
+            Console.WriteLine(connectionString);
             services.AddDbContext<DbCreateContext>(options => options.UseNpgsql(connectionString));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -41,6 +42,7 @@ namespace DbCreate
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, DbCreateContext db)
         {
+
             Console.WriteLine("Create DB");
             db.Database.EnsureCreated();
 
